@@ -1,0 +1,214 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+$colorMap: ("white": #fff, "grey": #B5C1CE);
+
+body {
+    font-family: $basic-font;
+    background: $bg;
+    color: $text-color;
+}
+@mixin logo-text {
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.header {
+    margin: 0 auto;
+    width: 100%;
+    height: 80vh;
+    background: $header-image center left no-repeat;
+    background-size: 100%;
+    border-radius: 0% 0% 35% 55% / 100% 50% 40% 0% ;
+    overflow: hidden;
+    position: relative;
+
+    .landing-logo {
+        max-width: 147px;
+        overflow: hidden;
+        text-align: center;
+        padding-top: 30px;
+        img {
+            margin-right: 9px;
+            float: left;
+        }
+        p {
+            @include logo-text;
+            font-size: 28px;
+        }
+        span {
+            @include logo-text;
+            font-size: 11px;
+            display:block;
+        }
+    }
+
+    .header_heading {
+        position: relative;
+        margin: 60px 0 -50px 0;
+        width: 600px;
+        height: 202px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 70px;
+        font-weight: bold;
+        color: $title-color;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            bottom: 70px;
+            left: 0;
+            z-index: -1;
+            width: 295px;
+            height: 40px;
+            content: '';
+            background: $bg-under-text;
+        }
+    }
+
+    .header_text {
+        width: 900px;
+        line-height: 30px;
+        white-space: pre-line;
+        
+    }
+
+    .header-wrap {
+        width: 1525px;
+        margin: 0 auto;
+    }
+}
+
+.header_button {
+    margin: 60px auto;
+    padding: 10px;
+    width: 140px;
+    height: 45px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 3px;
+    border: none;
+    background: $btn-color;
+    outline: none;
+    &:hover {
+        cursor: pointer;
+        background: fade-out($btn-color, .1);
+    }
+}
+.login{
+    color: #fff ;
+    padding-left: 150px;
+}
+
+.section {
+    margin: 25px auto;
+    background: $section-bg;
+    position: relative;
+    background: $bg;
+    .section_text {
+        margin: 35px auto 35px auto;
+        width: 418px;
+        position: relative;
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: $basic-font;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            bottom: 7px;
+            right: 13px;
+            z-index: -1;
+            width: 180px;
+            height: 45px;
+            content: '';
+            background: $bg-under-text;
+        }
+    }
+}
+
+.section_card_wrap {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    .section_card {
+        display: flex;
+        align-items: center;
+        width: 950px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-right: 110px;
+        background-color: $card-bg;
+        border-radius: 4px;
+        color: #fff;
+        img {
+            border-radius: 4px;
+            width: 100%;
+        }
+        
+        .section_card_heading {
+            position: relative;
+            width: auto;
+            max-width: 180px;
+            height: 30px;
+            margin: 15px auto;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .section_card_text {
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 24px;
+            color: #B5C1CE;
+        }
+        .section_link{
+            color: #B5C1CE;
+        }
+    }
+}
