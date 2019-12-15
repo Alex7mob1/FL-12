@@ -190,6 +190,7 @@ body {
         img {
             border-radius: 4px;
             width: 100%;
+            padding-right: 150px;
         }
         
         .section_card_heading {
@@ -200,15 +201,94 @@ body {
             margin: 15px auto;
             font-size: 22px;
             font-weight: bold;
+            text-align: left;
         }
         .section_card_text {
-            font-size: 14px;
+            font-size: 16px;
             font-weight: normal;
             line-height: 24px;
             color: #B5C1CE;
+            margin-bottom: 30px;
         }
         .section_link{
             color: #B5C1CE;
+            padding: 180px;
+            
         }
     }
+}
+
+.section_banner {
+    position: absolute;
+    margin: 0 auto;
+    padding: 30px 60px;
+    width: 760px;
+    height: 80px;
+    background: $banner-gradient; 
+    overflow: hidden;
+    bottom: -250px;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    border-radius: 6px;
+    .section_banner_heading {
+        margin-bottom: 15px;
+        font-size: 28px;
+        font-weight: bold;
+        font-family: 'Hind', sans-serif;
+    }
+
+    .section_banner_text {
+        color: map-get($colorMap, "grey");
+    }
+
+    .section_banner_button {
+        @extend .header_button ;
+        position: absolute;
+        right: 25px;
+        bottom: 0;
+    }
+}
+
+
+.footer {
+margin: 0 auto;
+padding-top: 100px;
+width: 100%;
+height: 250px;    
+background: $card-bg;
+color: map-get($colorMap, "white");
+.footer-wrap {
+    margin: 0 auto;
+    max-width: 1200px;
+    .footer_logo, .footer_text, .footer-cr {
+        margin: 0 70px;
+        float: left;
+    }
+
+    .footer_logo {
+        width: 150px;
+        img {
+            float: left;
+        }
+        p {
+            margin-left: 15px;
+            float: left;
+            text-align: center;
+            font-size: 26px;
+        }
+        span {
+            margin-left: 15px;
+            line-height: 25px;
+            text-align: center;
+            font-size: 16px;
+        }
+    }
+
+    .footer_text {
+        max-width: 380px;
+        line-height: 24px;
+        font-weight: normal
+    }
+}
 }
