@@ -227,12 +227,12 @@ body {
   position: absolute;
   margin: 0 auto;
   padding: 30px 60px;
-  width: 760px;
+  width: 1060px;
   height: 80px;
   background: -webkit-gradient(linear, left top, right top, color-stop(37%, #e2aa01), color-stop(80%, #a0306c), color-stop(100%, #932c53), to(#932c53));
   background: linear-gradient(to right, #e2aa01 37%, #a0306c 80%, #932c53 100%, #932c53 100%);
   overflow: hidden;
-  bottom: -250px;
+  bottom: -230px;
   margin-left: auto;
   left: 0;
   right: 0;
@@ -249,44 +249,50 @@ body {
   /* line 245, ../scss/_main.scss */
   .section_banner .section_banner_button {
     position: absolute;
-    right: 25px;
-    bottom: 0; }
+    right: 155px;
+    bottom: -10px; }
 
 /* line 254, ../scss/_main.scss */
 .footer {
-  margin: 0 auto;
-  padding-top: 100px;
+  margin: 165px auto 0 auto;
+  padding-top: 150px;
   width: 100%;
   height: 250px;
-  background: #3B3F50;
+  background: #22232c;
   color: #fff; }
   /* line 261, ../scss/_main.scss */
   .footer .footer-wrap {
     margin: 0 auto;
-    max-width: 1200px; }
-    /* line 264, ../scss/_main.scss */
+    max-width: 1200px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    /* line 265, ../scss/_main.scss */
     .footer .footer-wrap .footer_logo, .footer .footer-wrap .footer_text, .footer .footer-wrap .footer-cr {
       margin: 0 70px;
       float: left; }
-    /* line 269, ../scss/_main.scss */
+    /* line 270, ../scss/_main.scss */
     .footer .footer-wrap .footer_logo {
-      width: 150px; }
-      /* line 271, ../scss/_main.scss */
+      max-width: 147px;
+      overflow: hidden;
+      text-align: center;
+      padding-top: 30px; }
+      /* line 275, ../scss/_main.scss */
       .footer .footer-wrap .footer_logo img {
+        margin-right: 9px;
         float: left; }
-      /* line 274, ../scss/_main.scss */
+      /* line 279, ../scss/_main.scss */
       .footer .footer-wrap .footer_logo p {
-        margin-left: 15px;
-        float: left;
-        text-align: center;
-        font-size: 26px; }
-      /* line 280, ../scss/_main.scss */
-      .footer .footer-wrap .footer_logo span {
-        margin-left: 15px;
         line-height: 25px;
-        text-align: center;
-        font-size: 16px; }
-    /* line 288, ../scss/_main.scss */
+        font-weight: bold;
+        font-size: 28px; }
+      /* line 283, ../scss/_main.scss */
+      .footer .footer-wrap .footer_logo span {
+        line-height: 25px;
+        font-weight: bold;
+        font-size: 11px;
+        display: block; }
+    /* line 290, ../scss/_main.scss */
     .footer .footer-wrap .footer_text {
       max-width: 380px;
       line-height: 24px;
