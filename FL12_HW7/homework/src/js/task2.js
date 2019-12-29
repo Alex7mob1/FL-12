@@ -21,9 +21,6 @@ if (askPlay === true) {
     for (let i = 0; i < maxAttempts; i++) {
         gameRandom = Math.floor(Math.random() * minRange);
 
-        // to see real answer:
-        // alert(gameRandom);
-
         askNumber = Number(prompt('Choose a roulette pocket from 0 to ' + minRange +
             '\nAttempts left: ' + userTry + 
             '\nTotal prize: ' + userResult + '$' +
@@ -42,11 +39,11 @@ if (askPlay === true) {
                 minRange += 4;
                 i = -1;
             } else {
-                alert('Thank you for game\nYour prize: ' + userResult + '$');
+                alert('Thank you for your participation\nYour prize is: ' + userResult + '$');
                 i = 3;
             }
         } else if(userTry === 0){
-            alert('Thank you for game\nYour prize: ' + userResult);
+            alert('Thank you for your participation\nYour prize is: ' + userResult);
             let askContinue = confirm('Play again?');
                 if (askContinue) {
                     userTry = 3;
