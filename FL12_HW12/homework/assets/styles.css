@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/light-veneer.png");
+    font-family: Arial;
+}
+
+#root {
+    margin: 250px auto;
+    text-align: center;
+    color: #474241;
+}
+
+.btn {
+    margin: 10px 15px;
+    padding: 15px;
+    background: #474241;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 6px;
+    min-width: 160px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+input {
+    margin: 0 auto;
+    padding: 10px;
+    width: 320px;
+    height: 15px;
+    border: 2px solid #000;
+    border-radius: 6px;
+}   
+
+.list-item {
+    margin: 0 auto;
+    padding: 15px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+}
+
+.list-item .list-icon {
+    margin: 0 25px;
+    width: 25px;
+    height: 25px;
+}
+
+.notification {
+    padding: 30px;
+    width: 150px;
+    background: #D8683B;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.notification h2 {
+    font-size: 22px;
+}
+
+.chrome-position {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.other-position {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
